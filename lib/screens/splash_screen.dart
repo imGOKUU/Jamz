@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jamz/screens/login_page.dart';
+import 'package:jamz/screens/welcome_page.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen>
       _scaleController.forward();
     });
     Future.delayed(const Duration(seconds: 10),(){
-      Navigator.of(context).pushReplacement(MaterialPageRoute( builder: (BuildContext context) {return LoginPage();}));
+      Navigator.of(context).pushReplacement(MaterialPageRoute( builder: (BuildContext context) {return const WelcomePage();}));
     });
   }
 
